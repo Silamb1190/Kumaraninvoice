@@ -4,7 +4,7 @@ FROM php:8.0-apache
 # Enable mod_rewrite (required for many PHP applications)
 RUN a2enmod rewrite
 
-# Set the working directory to the app directory
+# Set the working directory inside the container
 WORKDIR /var/www/html
 
 # Copy the current directory contents into the container at /var/www/html
